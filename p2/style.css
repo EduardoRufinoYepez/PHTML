@@ -174,6 +174,77 @@ body {
     background: #3b4f66;
 }
 
+/* Contenedor articulos */
+.featured-items {
+    max-width: 1500px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.section-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* Grid de Tarjetas */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Estilo de Cada Tarjeta */
+.item-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.item-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item-info {
+    padding: 1.5rem;
+}
+
+.item-info h3 {
+    color: #e74c3c;
+    margin-bottom: 0.5rem;
+}
+
+.item-info p {
+    color: #7f8c8d;
+    margin-bottom: 1.2rem;
+}
+
+/* Botón */
+.item-button {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.item-button:hover {
+    background: #c0392b;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .dropdown-content {
